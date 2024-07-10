@@ -1,0 +1,16 @@
+GET http://localhost:3000
+Accept: application/json
+###
+GET http://localhost:3000/1
+Accept: application/json
+###
+GET http://localhost:3000/5
+Accept: application/json
+###
+// A POST request with a body
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+  "name": "A. Name"
+}
