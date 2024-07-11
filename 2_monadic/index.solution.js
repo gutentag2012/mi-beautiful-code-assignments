@@ -2,6 +2,10 @@ import { runProgramm, numberMagic } from './programm.js'
 import { Result } from './result.js'
 
 function parseInput(input) {
+    if(!input) {
+        return Result.fail('Input must not be empty');
+    }
+    
     // Step 1: Parse input string to number
     const parsed = Number(input);
 
